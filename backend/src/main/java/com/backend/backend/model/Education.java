@@ -13,19 +13,19 @@ public class Education {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
-    private Long id;
+    public Long id;
     @Column(name="username")
-    private String username;
+    public String username;
     @Column(name="degree")
-    private String degree;
+    public String degree;
     @Column(name="institution")
-    private String institution;
+    public String institution;
     @Column(name="is_current")
-    private Boolean is_current;
+    public Boolean is_current;
     @Column(name="start_date")
-    private String start_date;
+    public String start_date;
     @Column(name="end_date")
-    private String end_date;
+    public String end_date;
 
     public Education(){
         

@@ -6,13 +6,13 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.backend.backend.model.User;
-import com.backend.backend.service.HeaderService;
+import com.backend.backend.service.UserService;
 
 @RestController
-public class HeaderController {
+public class UserController {
 
     @Autowired
-    private HeaderService service;
+    private UserService service;
 
 
     @GetMapping ("/portfolio/user/{username}")

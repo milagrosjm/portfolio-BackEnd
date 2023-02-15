@@ -9,27 +9,23 @@ import com.backend.backend.model.User;
 import com.backend.backend.repository.UserRepository;
 
 @Service
-public class UserService implements iUserService{
+public class UserService {
 
     @Autowired
     private UserRepository repo;
 
-    @Override
     public List<User> listUsers() {
         return repo.findAll();
     }
 
-    @Override
     public void createUser(User us) {
         repo.save(us);
     }
 
-    @Override
     public void deteleUser(String username) {
         repo.deleteById(username);;
     }
 
-    @Override
     public User getUser(String username) {
         return repo.findById(username).orElse(null);
     }
