@@ -11,6 +11,7 @@ import com.backend.backend.model.Education;
 import com.backend.backend.service.EducationService;
 
 @RestController
+//@RequestMapping("/portfolio/education")
 public class EducationController {
 
     @Autowired

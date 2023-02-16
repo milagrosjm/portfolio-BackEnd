@@ -14,16 +14,20 @@ public class Project {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
-    private Long id;
+    public Long id;
     @Column(name="photo")
-    private String photo;
-    @Column(name="link")
-    private String link;
+    public String photo;
+    @Column(name="link_deploy")
+    public String link_deploy;
+    @Column(name="link_github")
+    public String link_github;
+    @Column(name="tittle")
+    public String tittle;
     @Column(name="description")
-    private String description;
+    public String description;
     @Column(name="id_portfolio")
-    private String id_portfolio;
+    public String id_portfolio;
     @Column(name="username")
-    private String username;
+    public String username;
    
 }

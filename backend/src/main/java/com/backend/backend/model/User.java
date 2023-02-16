@@ -41,6 +41,9 @@ public class User {
     @JsonProperty
     @Column(name="degree")
     private String degree;
+    @JsonProperty
+    @Column(name="photo")
+    private String photo;
     //@OneToMany(targetEntity = Experience.class, cascade = CascadeType.ALL, orphanRemoval = true)
     //@JoinColumn(name = "username", referencedColumnName = "username")
     //private List<Experience> experiences;

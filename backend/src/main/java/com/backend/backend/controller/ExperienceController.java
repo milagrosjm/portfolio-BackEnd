@@ -11,6 +11,7 @@ import com.backend.backend.model.Experience;
 import com.backend.backend.service.ExperienceService;
 
 @RestController
+//@RequestMapping("/portfolio/experience")
 public class ExperienceController {
 
     @Autowired

@@ -9,6 +9,7 @@ import com.backend.backend.model.User;
 import com.backend.backend.service.UserService;
 
 @RestController
+//@RequestMapping("/portfolio/user")
 public class UserController {
 
     @Autowired

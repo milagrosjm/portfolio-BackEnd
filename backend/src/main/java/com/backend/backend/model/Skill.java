@@ -14,12 +14,12 @@ public class Skill {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
-    private Long id;
+    public Long id;
     @Column(name="icon")
-    private String icon;
+    public String icon;
     @Column(name="id_portfolio")
-    private String id_portfolio;
+    public String id_portfolio;
     @Column(name="username")
-    private String username;
+    public String username;
     
 }
