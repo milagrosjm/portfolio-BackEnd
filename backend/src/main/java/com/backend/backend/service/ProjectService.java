@@ -17,7 +17,6 @@ public class ProjectService {
     public List<Project> getProject(String username) {
         
         List<Project> res = repo.findByUsernameQuery(username);
-        System.out.println(res);
         return res;
     }
     

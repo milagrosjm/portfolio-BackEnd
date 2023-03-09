@@ -22,28 +22,28 @@ public class User {
     @Id
     @JsonProperty
     @Column(name="username")
-    private String username;
+    public String username;
     @JsonProperty
     @Column(name="lastname")
-    private String lastname;
+    public String lastname;
     @JsonProperty
     @Column(name="first_name")
-    private String first_name;
+    public String first_name;
     @JsonProperty
     @Column(name="second_name")
-    private String second_name;
+    public String second_name;
     @JsonProperty
     @Column(name="password")
-    private String password;
+    public String password;
     @JsonProperty
     @Column(name="about_me")
-    private String about_me;
+    public String about_me;
     @JsonProperty
     @Column(name="degree")
-    private String degree;
+    public String degree;
     @JsonProperty
     @Column(name="photo")
-    private String photo;
+    public String photo;
     //@OneToMany(targetEntity = Experience.class, cascade = CascadeType.ALL, orphanRemoval = true)
     //@JoinColumn(name = "username", referencedColumnName = "username")
     //private List<Experience> experiences;
@@ -58,5 +58,10 @@ public class User {
         this.username = username;
         this.first_name = first_name;
         this.lastname = lastname;}
+
+    public void setAboutMe(String about_me){
+        this.about_me = about_me; 
+    }
+
     
 }

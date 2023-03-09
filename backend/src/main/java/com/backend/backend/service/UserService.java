@@ -23,11 +23,36 @@ public class UserService {
     }
 
     public void deteleUser(String username) {
-        repo.deleteById(username);;
+        repo.deleteById(username);
     }
 
     public User getUser(String username) {
         return repo.findById(username).orElse(null);
     }
-    
+
+    public Boolean getUserLogin(User us){
+        User user = repo.login(us.username, us.password);
+
+        return (user != null);
+    }
+
+    public void updateAboutMe(User us){
+        User existingUser = repo.findById(us.username).orElse(null); 
+        existingUser.about_me = us.about_me;
+        repo.save(existingUser);
+    }
+
+    public void updateHeaderName(User us){
+        User existingUser = repo.findById(us.username).orElse(null); 
+        existingUser.first_name = us.first_name;
+        existingUser.second_name = us.second_name;
+        existingUser.lastname = us.lastname;
+        repo.save(existingUser);
+    }
+
+    public void updateHeaderDegree(User us){
+        User existingUser = repo.findById(us.username).orElse(null); 
+        existingUser.degree = us.degree;
+        repo.save(existingUser);
+    }
 }

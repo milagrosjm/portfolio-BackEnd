@@ -17,7 +17,6 @@ public class SkillService {
     public List<Skill> getSkills(String username) {
         
         List<Skill> res = repo.findByUsernameQuery(username);
-        System.out.println(res);
         return res;
     }
 }

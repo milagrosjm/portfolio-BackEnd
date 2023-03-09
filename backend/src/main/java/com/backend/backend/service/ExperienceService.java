@@ -17,7 +17,6 @@ public class ExperienceService {
     public List<Experience> getExperience(String username) {
         
         List<Experience> res = repo.findByUsernameQuery(username);
-        System.out.println(res);
         return res;
     }
     
