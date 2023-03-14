@@ -19,5 +19,19 @@ public class ExperienceService {
         List<Experience> res = repo.findByUsernameQuery(username);
         return res;
     }
+
+    public Experience getExperienceDetail(Long id){
+        
+        Experience exp = repo.findById(id).orElse(null); ;
+        return exp;
+    }
+
+    public void updateExperience(Experience exp){
+        repo.save(exp);
+    }
+
+    public void deteleExperience(Long id) {
+        repo.deleteById(id);
+    }
     
 }

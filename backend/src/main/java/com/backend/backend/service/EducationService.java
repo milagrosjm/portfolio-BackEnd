@@ -19,5 +19,18 @@ public class EducationService {
         List<Education> res = repo.findByUsernameQuery(username);
         return res;
     }
+
+    public Education getEducationDetail(Long id){
+        
+        return repo.findById(id).orElse(null);
+    }
+
+    public void updateEducation(Education ed){
+        repo.save(ed);
+    }
+
+    public void deteleEducation(Long id) {
+        repo.deleteById(id);
+    }
     
 }
