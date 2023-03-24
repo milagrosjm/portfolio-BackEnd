@@ -16,8 +16,20 @@ public class ProjectService {
 
     public List<Project> getProject(String username) {
         
-        List<Project> res = repo.findByUsernameQuery(username);
-        return res;
+        return repo.findByUsernameQuery(username);
+    }
+
+    public Project getProjectDetail(Long id){
+        
+        return repo.findById(id).orElse(null); 
+    }
+
+    public void updateProject(Project proj){
+        repo.save(proj);
+    }
+
+    public void deteleProject(Long id) {
+        repo.deleteById(id);
     }
     
 }

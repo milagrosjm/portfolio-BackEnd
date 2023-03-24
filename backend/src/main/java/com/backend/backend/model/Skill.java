@@ -21,5 +21,7 @@ public class Skill {
     public String id_portfolio;
     @Column(name="username")
     public String username;
+    @Column(name="`name`")
+    public String name;
     
 }

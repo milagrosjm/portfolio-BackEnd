@@ -16,7 +16,19 @@ public class SkillService {
 
     public List<Skill> getSkills(String username) {
         
-        List<Skill> res = repo.findByUsernameQuery(username);
-        return res;
+        return repo.findByUsernameQuery(username);
+    }
+
+    public Skill getSkillDetail(Long id){
+        
+        return repo.findById(id).orElse(null); 
+    }
+
+    public void updateSkill(Skill proj){
+        repo.save(proj);
+    }
+
+    public void deteleSkill(Long id) {
+        repo.deleteById(id);
     }
 }

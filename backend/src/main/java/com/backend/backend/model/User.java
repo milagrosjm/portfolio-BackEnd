@@ -1,19 +1,12 @@
 package com.backend.backend.model;
 
-import java.util.List;
-
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.OneToMany;
-import jakarta.persistence.Table;
 
-import lombok.Getter;
-import lombok.Setter;
+import jakarta.persistence.Table;
 
 @Entity
 @Table(name="User")

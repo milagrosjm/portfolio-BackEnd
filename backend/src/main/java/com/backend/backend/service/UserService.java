@@ -39,6 +39,7 @@ public class UserService {
     public void updateAboutMe(User us){
         User existingUser = repo.findById(us.username).orElse(null); 
         existingUser.about_me = us.about_me;
+        existingUser.photo = us.photo;
         repo.save(existingUser);
     }
 
