@@ -15,7 +15,7 @@ import com.backend.backend.service.UserService;
 
 @RestController
 @RequestMapping("/portfolio/user")
-@CrossOrigin(origins = {"http://localhost:4200"}, methods = {RequestMethod.GET, RequestMethod.POST})
+@CrossOrigin(origins = {"http://localhost:4200", "https://frontend-argprog-f91e1.web.app"}, methods = {RequestMethod.GET, RequestMethod.POST})
 public class UserController {
 
     @Autowired

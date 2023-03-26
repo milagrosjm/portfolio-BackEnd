@@ -15,7 +15,7 @@ import com.backend.backend.service.ProjectService;
 import com.backend.backend.model.Project;
 @RestController
 @RequestMapping("/portfolio/project")
-@CrossOrigin(origins = {"http://localhost:4200"}, methods = {RequestMethod.GET, RequestMethod.POST, RequestMethod.DELETE})
+@CrossOrigin(origins = {"http://localhost:4200", "https://frontend-argprog-f91e1.web.app"}, methods = {RequestMethod.GET, RequestMethod.POST, RequestMethod.DELETE})
 public class ProjectController {
 
     @Autowired

@@ -18,7 +18,7 @@ import com.backend.backend.service.ExperienceService;
 
 @RestController
 @RequestMapping("/portfolio/experience")
-@CrossOrigin(origins = {"http://localhost:4200"}, methods = {RequestMethod.GET, RequestMethod.POST, RequestMethod.DELETE})
+@CrossOrigin(origins = {"http://localhost:4200", "https://frontend-argprog-f91e1.web.app"}, methods = {RequestMethod.GET, RequestMethod.POST, RequestMethod.DELETE})
 public class ExperienceController {
 
     @Autowired

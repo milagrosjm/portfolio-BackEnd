@@ -18,7 +18,7 @@ import com.backend.backend.service.EducationService;
 
 @RestController
 @RequestMapping("/portfolio/education")
-@CrossOrigin(origins = {"http://localhost:4200"}, methods = {RequestMethod.GET, RequestMethod.POST, RequestMethod.DELETE})
+@CrossOrigin(origins = {"http://localhost:4200", "https://frontend-argprog-f91e1.web.app"}, methods = {RequestMethod.GET, RequestMethod.POST, RequestMethod.DELETE})
 public class EducationController {
 
     @Autowired
